@@ -1,0 +1,246 @@
+.HomePage-MainContainer {
+    background-image: url('images/homePageBackground.png');
+    width: 100vw;
+    background-size: cover;
+    background-repeat: repeat, repeat;
+    height: 100vh;
+}
+
+.indicatorPage {
+    background-image: url('images/indicatorPageBackground.png');
+    width: 100vw;
+    background-size: cover;
+    background-repeat: repeat, repeat;
+    height: 100vh;
+}
+
+.indicatorName {
+    position: absolute;
+    width: 53vw;
+    height: 11vh;
+    left: 25vw;
+    top: 30vh;
+    font-family: mainFont, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 66px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.indicatorValue {
+    position: absolute;
+    width: 53vw;
+    height: 9vh;
+    left: 25vw;
+    top: 45vh;
+    font-family: mainFont, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.indicatorSlider {
+    position: absolute;
+    height: 1.5vh;
+    left: 30vw;
+    top: 60vh;
+}
+.MuiSlider-root {
+    width: 45vw !important;
+}
+
+.indicatorSlider > .MuiSlider-track {
+    left: 0%;
+    width: 14%;
+    background: linear-gradient(89.34deg, rgb(222, 151, 255) 5.37%, rgb(202, 82, 255) 98.69%);
+    border-radius: 5px 0px 0px 5px;
+    height: inherit;
+    height: 2vh;
+}
+
+.light > .MuiSlider-track {
+    background: linear-gradient(89.34deg, #FFDB95 5.37%, #FFA04F 98.69%);
+    border-radius: 5px 0px 0px 5px;
+    height: inherit;
+    height: 2vh;
+}
+
+.indicatorSlider > .MuiSlider-rail {
+
+    background: linear-gradient(89.01deg, rgba(7, 70, 120, 0.7) 5.37%, rgba(23, 42, 101, 0.7) 98.69%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    height: 2vh;
+}
+
+.indicatorSlider > .MuiSlider-thumb {
+    color: #FFFFFF;
+    width: 5px;
+    height: 4vh;
+    background: #F1F0F0;
+    border-radius: 3px;
+
+}
+
+.MuiSwitch-root {
+    position: absolute;
+    width: 25vw !important;
+    left: 40vw;
+    height: 2vh !important;
+    top: 65vh;
+    background: linear-gradient(89.75deg, rgba(7, 70, 120, 0.7) 5.37%, rgba(23, 42, 101, 0.7) 98.69%);
+    border-radius: 5px;
+    padding: 0% !important;
+    justify-content: flex-end;
+}
+
+.MuiSwitch-root.Mui-checked {
+    display: inline-flex;
+    padding: 0px;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    vertical-align: middle;
+    justify-content: flex-start;
+
+}
+
+
+.MuiSwitch-thumb {
+    width: 0% !important;
+    height: 0% !important;
+
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background: linear-gradient(89.88deg, #17EDE0 5.37%, #2ADA90 98.69%);
+    border-radius: 5px 0px 0px 5px;
+    opacity: 0.8;
+    height: 2vh !important;
+    transform: rotate(-180deg);
+}
+
+.MuiSwitch-input {
+    width: 53vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiSwitch-track {
+    background: linear-gradient(89.88deg, #FC007C 5.37%, #D30053 98.69%);
+    border-radius: 5px 0px 0px 5px;
+    opacity: 0.8;
+    width: 100% !important;
+    height: 2vh !important;
+}
+
+.clue {
+    position: absolute;
+    width: 53vw;
+    height: 53px;
+    left: 25vw;
+    top: 70vh;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.indicatorLabel {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(223.11deg, rgba(39, 8, 80, 0.7) 0%, rgba(30, 34, 104, 0.7) 96.61%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.indicatorLabel > * {
+    margin: 5px;
+
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(./fonts/main-font.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+
+.text {
+    position: absolute;
+    width: 75vw;
+    height: 17vh;
+    line-height: 1.3;
+    left: 20vw;
+    top: 65vh;
+
+    font-family: mainFont, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5vw;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.text > .welcome {
+    font-size: 2.5vw;
+}
+.btn {
+    position: absolute;
+    height: 7vh;
+    background: linear-gradient(92.44deg, #1B1C5C 0.28%, #220443 103.61%);
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.btn > * {
+    font-family: Poppins, serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-align: right;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+#root {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: no-repeat;
+    background-size: cover;
+}
